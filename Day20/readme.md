@@ -5,14 +5,19 @@ H/W: Countdown Timer for Olympic 2028
 c: Accessing by CSS Selectors:
    i: Single Element:
       Method: document.querySelector(selector)
-      Description: Returns the first element matching the specified CSS 
+      Description: Returns the first element matching the specified CSS              //Nodelist ki tarah rehta hai
       selector.
     
+
+
     ii: Multiple Elements:
         Method: document.querySelectorAll(selector)
         Description: Returns a static NodeList of all elements matching the 
         specified CSS selector.
     
+
+
+
 d: Accessing by Tag Name
    Method: document.getElementsByTagName(tagName)
    Description: Returns a live HTMLCollection of all elements with the 
@@ -37,7 +42,14 @@ e: Accessing Using Relationships
    Element Siblings: element.nextElementSibling, 
    element.previousElementSibling
 
+1.document.getElementById("first").innerHTML
+        iske under jo main tag h , uske under k saare elemet ko output me dega , koi aur bhi tags hua unko bhi print krwata hai 
 
+2.document.getElementById("first").textContent
+      isme wo element bhi dhik jaega jisko humne hide krke rkha hai 
+       
+3.document.getElementById("first").innerText
+      Jo screen pe hai usi ko show krega
 
 
 

@@ -1,4 +1,4 @@
-
+   //FOr Timer
 // function timing(){
 // const timer = document.getElementById('root');
 // const now = new Date();
@@ -8,6 +8,7 @@
 
 // setInterval(timing,1000);
 
+       
 
 // const timer = document.getElementById('root');
 // timer.style.fontSize = "200px";
@@ -17,23 +18,25 @@
 // timer.style.alignItems = "center";
 
 
-// const id = document.querySelector('#first');
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+// const id = document.querySelector('#first');          //  # for id , . for classS
 // id.innerHTML = "Hello Money";
 
-// const id2 = document.querySelector('.header2');
+// const id2 = document.querySelector('.header2');      //selecting class
 // id2.style.backgroundColor = "pink";
 
 
 //  How to iterate over Node list
 
-// const obj = document.querySelectorAll('.header1')
+// const obj = document.querySelectorAll('.header1')     //It will select all classes
 
 //1:  obj.forEach((val)=>{
 //     console.log(val)
 //     })
 
 
-// 2: for(let val of obj)
+// 2: for(let val of obj)                                 //for of 
 // console.log(val)
 
 // 3: for(i=0;i<obj.length;i++)
@@ -53,7 +56,7 @@
 // let team = document.getElementsByTagName('li');
 
 // How to iterate over it
-// 1:for(let i=0;i<team.length;i++)
+// for(let i=0;i<team.length;i++)
 // team[i].style.color = "black";
 
 // 2: for(let val of team)
@@ -74,12 +77,12 @@
 // console.log(list.parentNode);
 
 
-// const par = document.querySelector('ul');
+const par = document.querySelector('ul');              
 // console.log(par);
-// console.log(par.childNodes);
-// console.log(par.children);
+// console.log(par.childNodes);                          // Child nodes return krwata hai  , Spaces ko bhi dhyan me rkhta hai  mtlb ye Children k sath sath space bhi as a children hi manta haiu
+// console.log(par.children);                            //Only it will return children
 // console.log(par.firstChild);
-// console.log(par.firstElementChild);
+// console.log(par.firstElementChild); 
 
 
 

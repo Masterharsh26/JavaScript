@@ -13,11 +13,14 @@ const sec = Math.floor((dateee/(1000))%60);
 
 const IndianTime = `
         <div style="text-align: center;">
-            <div style="font-size: 200px;">${days}</div>
-            <div style="display: flex; justify-content: center; gap: 40px; font-size: 30px;">
-                <div>${hour.toString().padStart(2, '0')}<br><small>hours</small></div>
-                <div>${min.toString().padStart(2, '0')}<br><small>minutes</small></div>
-                <div>${sec.toString().padStart(2, '0')}<br><small>seconds</small></div>
+            <div style="font-size: 200px; line-height:1;">
+            ${days}
+               <div style="font-size: 60px;">Days</div>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 80px; font-size: 60px;">
+                <div>${hour.toString().padStart(2, '0')}<br><small>Hours</small></div>
+                <div>${min.toString().padStart(2, '0')}<br><small>Minutes</small></div>
+                <div>${sec.toString().padStart(2, '0')}<br><small>Seconds</small></div>
             </div>
         </div>
 
