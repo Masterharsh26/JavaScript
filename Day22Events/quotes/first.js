@@ -21,27 +21,52 @@ const quotes = [
     "Everything you’ve ever wanted is on the other side of fear. — George Addair"
   ];
   
-const bgColors = [
-  "#FFADAD", "#FFD6A5", "#FDFFB6", "#CAFFBF", "#9BF6FF",
-  "#A0C4FF", "#BDB2FF", "#FFC6FF", "#FFFFFC", "#D0F4DE"
-];
-
-function changeBackgroundColor() {
-  const index = Math.floor(Math.random() * bgColors.length);
-  document.body.style.backgroundColor = bgColors[index];
-}
-
-function generateQuote(){  
-const text = document.getElementById("quote");
-
-const index = Math.floor(Math.random()*quotes.length);  //quotes.length 0-20 tk jaega
-text.textContent = quotes[index];                      //Random generator k liye Math.random() ka use kiya gya hai
-}
-
-
-setInterval(generateQuote,3000);
-setInterval(changeBackgroundColor, 3000);
 
 
 
+const button = document.querySelector('button');
 
+
+
+//Adding Event  ***** MOUSE EVENT ******
+button.addEventListener('click',(event)=>{     //Call by Fxn
+
+  console.log(event.target);
+  console.log(event.type);
+  console.log(event.key);
+    console.log(event.clientX);
+    const text = document.getElementById("quote");
+    const index = Math.floor(Math.random() * quotes.length); 
+    text.textContent = quotes[index];
+
+})
+
+
+
+//Adding Event  ***** KEY EVENT ******
+// document.addEventListener('keyup',()=>{     //Call by Fxn , yha pe document. isliye likhe hai kyuki cursor ko button pe le jae bina kisi bhi key ko press krne se Quote will change
+
+//     const text = document.getElementById("quote");
+//     const index = Math.floor(Math.random() * quotes.length); 
+//     text.textContent = quotes[index];
+
+// })
+
+// Event Object
+//  document.addEventListener('keydown',(event)=>{    
+//     console.log(event.key);         //Koi bhi key press kro that will be showup in console
+//     const text = document.getElementById("quote");
+//     const index = Math.floor(Math.random() * quotes.length); 
+//     text.textContent = quotes[index];
+
+// })
+
+//Kisi particular key k press krne se hi Quote change ho 
+// document.addEventListener('keydown',(event)=>{  
+
+//            if(event.key === "Enter"){
+//     const text = document.getElementById("quote");
+//     const index = Math.floor(Math.random() * quotes.length); 
+//     text.textContent = quotes[index];
+//            }
+// })
