@@ -21,20 +21,27 @@ const quotes = [
     "Everything you’ve ever wanted is on the other side of fear. — George Addair"
   ];
   
+const bgColors = [
+  "#FFADAD", "#FFD6A5", "#FDFFB6", "#CAFFBF", "#9BF6FF",
+  "#A0C4FF", "#BDB2FF", "#FFC6FF", "#FFFFFC", "#D0F4DE"
+];
 
+function changeBackgroundColor() {
+  const index = Math.floor(Math.random() * bgColors.length);
+  document.body.style.backgroundColor = bgColors[index];
+}
 
 function generatQuote(){  
 const text = document.getElementById("quote");
 
-
-const index = Math.floor(Math.random()*quotes.length);
-text.textContent = quotes[index];
+const index = Math.floor(Math.random()*quotes.length);  //quotes.length 0-20 tk jaega
+text.textContent = quotes[index];                      //Random generator k liye Math.random() ka use kiya gya hai
 }
 
 
-setInterval(generatQuote,2000);
+setInterval(generatQuote,3000);
+setInterval(changeBackgroundColor, 3000);
 
-
-//  Chnage the background color in every 5 second
+//  Change the background color in every 5 second
 
 
