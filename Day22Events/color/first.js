@@ -40,9 +40,9 @@ document.body.addEventListener("click", (event)=>{
 
   const color = ["red", "blue", "orange", "green","purple", "white","yellow", "wheat"];
   circle.style.backgroundColor = color[Math.floor(Math.random()*color.length)];
-  document.body.appendChild(circle);
+  document.body.appendChild(circle);   // Jo div bnaye hai usko body m daalna
 
-  setTimeout(()=>{
+  setTimeout(  ()=>{      // Deleting that div class 
     circle.remove();
   } ,5000)
-})
+})                   
